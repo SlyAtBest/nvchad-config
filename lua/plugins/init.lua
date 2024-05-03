@@ -27,7 +27,9 @@ return {
         "prettier",
         "gopls",
         "golangci-lint-langserver",
-        "gofumpt"
+        "gofumpt",
+        "goimports-reviser",
+        "golines",
       },
     },
   },
