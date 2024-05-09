@@ -3,12 +3,11 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    go = { "goimports-reviser", "golines", "gofumpt" },
+    go = { "golines", "gofumpt", "goimports-reviser" },
   },
 
-  format_on_save = {
+  format_after_save = {
     -- These options will be passed to conform.format()
-    timeout_ms = 500,
     lsp_fallback = true,
   },
 
