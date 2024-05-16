@@ -1,7 +1,7 @@
 return {
   {
     "stevearc/conform.nvim",
-    event = 'BufWritePre', -- uncomment for format on save
+    event = "BufWritePre", -- uncomment for format on save
     config = function()
       require "configs.conform"
     end,
@@ -30,17 +30,36 @@ return {
         "gofumpt",
         "goimports-reviser",
         "golines",
+        "delve",
       },
     },
   },
 
   {
-  	"nvim-treesitter/nvim-treesitter",
-  	opts = {
-  		ensure_installed = {
-  			"vim", "lua", "vimdoc",
-       "html", "css", "go"
-  		},
-  	},
+    "nvim-treesitter/nvim-treesitter",
+    opts = {
+      ensure_installed = {
+        "vim",
+        "lua",
+        "vimdoc",
+        "html",
+        "css",
+        "go",
+      },
+    },
+  },
+
+  -- {
+  --   "mfussenegger/nvim-dap",
+  -- },
+
+  {
+    "leoluz/nvim-dap-go",
+    ft = "go",
+    dependencies = "mfussenegger/nvim-dap",
+    opts = {},
+    -- config = function(_, opts)
+    --   require("dap-go").setup(opts)
+    -- end,
   },
 }
