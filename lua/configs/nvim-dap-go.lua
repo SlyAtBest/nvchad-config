@@ -16,4 +16,7 @@ map("n", "<leader>gdl", function()
   require("dap-go").debug_last()
 end, { desc = "Debug last go test" })
 
+map("n", "<leader>gd", function()
+  require("dap").continue()
+end, { desc = "Debug run debugger" })
 require("dap-go").setup()
