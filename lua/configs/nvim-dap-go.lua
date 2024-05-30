@@ -18,4 +18,20 @@ map("n", "<leader>dui", function()
   require("dapui").toggle()
 end, { desc = "Debug open ui" })
 
+map("n", "<leader>so", function()
+  require("dap").step_over()
+end, { desc = "Debug step over" })
+
+map("n", "<leader>si", function()
+  require("dap").step_into()
+end, { desc = "Debug step into" })
+
+map("n", "<leader>sb", function()
+  require("dap").step_out()
+end, { desc = "Debug step back" })
+
+map("n", "<leader>td", function()
+  require("dap").terminate()
+end, { desc = "Debug terminate" })
+
 require("dap-go").setup()
