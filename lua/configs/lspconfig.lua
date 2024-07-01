@@ -3,7 +3,7 @@ local on_init = require("nvchad.configs.lspconfig").on_init
 local capabilities = require("nvchad.configs.lspconfig").capabilities
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "gopls", "golangci_lint_ls" }
+local servers = { "html", "cssls", "gopls", "golangci_lint_ls", "bashls" }
 
 -- lsps with default config
 for _, lsp in ipairs(servers) do
@@ -13,3 +13,13 @@ for _, lsp in ipairs(servers) do
     capabilities = capabilities,
   }
 end
+
+lspconfig.helm_ls.setup {
+  settings = {
+    ["helm-ls"] = {
+      yamlls = {
+        path = "yaml-language-server",
+      },
+    },
+  },
+}

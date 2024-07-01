@@ -8,6 +8,9 @@ return {
       "html",
       "css",
       "go",
+      "vhs",
+      "bash",
+      "helm",
     },
   },
 }

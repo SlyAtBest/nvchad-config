@@ -4,6 +4,8 @@ local options = {
     css = { "prettier" },
     html = { "prettier" },
     go = { "golines", "gofumpt", "goimports-reviser" },
+    sh = { "shfmt" },
+    yaml = { "yamlfix" },
   },
 
   format_after_save = {
