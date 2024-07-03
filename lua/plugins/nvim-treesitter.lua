@@ -11,6 +11,8 @@ return {
       "vhs",
       "bash",
       "helm",
+      "markdown",
+      "markdown_inline",
     },
   },
 }
