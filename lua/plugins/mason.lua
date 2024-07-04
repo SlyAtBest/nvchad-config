@@ -13,6 +13,9 @@ return {
       "goimports-reviser",
       "golines",
       "delve",
+      "bash-language-server",
+      "yaml-language-server",
+      "helm-ls",
     },
   },
 }
