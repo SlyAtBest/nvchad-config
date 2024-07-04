@@ -11,6 +11,14 @@ M.ui = {
   -- 	Comment = { italic = true },
   -- 	["@comment"] = { italic = true },
   -- },
+  statusline = {
+    order = { "mode", "file", "git", "%=", "path", "lsp_msg", "%=", "diagnostics", "lsp", "cwd", "cursor" },
+    modules = {
+      path = function()
+        return vim.fn.expand "%:p"
+      end,
+    },
+  },
 }
 
 return M
