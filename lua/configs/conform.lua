@@ -3,7 +3,7 @@ local options = {
     lua = { "stylua" },
     css = { "prettier" },
     html = { "prettier" },
-    go = { "golines", "gofumpt", "goimports-reviser" },
+    go = { "golines", "gofumpt", "goimports" },
     sh = { "shfmt" },
     yaml = { "yamlfix" },
   },
@@ -16,10 +16,16 @@ local options = {
   notify_on_error = true,
 
   formatters = {
-    ["goimports-reviser"] = {
+    ["goimports"] = {
       args = {
-        "-rm-unused",
-        "$FILENAME",
+        "-local",
+        "gitlab.fortra.com",
+      },
+    },
+    ["golines"] = {
+      args = {
+        "-m",
+        "120",
       },
     },
   },

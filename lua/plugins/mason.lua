@@ -10,7 +10,7 @@ return {
       "gopls",
       "golangci-lint-langserver",
       "gofumpt",
-      "goimports-reviser",
+      "goimports",
       "golines",
       "delve",
       "bash-language-server",
