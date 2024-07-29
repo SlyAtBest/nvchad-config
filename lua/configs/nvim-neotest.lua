@@ -22,6 +22,12 @@ map("n", "<leader>rts", function()
   }
 end, { desc = "Test run all tests in suite" })
 
+map("n", "<leader>st", function()
+  local neotest = require "neotest"
+  local ret = neotest.run.get_last_run()
+  neotest.run.stop(ret)
+end, { desc = "Test stop the last test run" })
+
 map("n", "<leader>ts", function()
   require("neotest").summary.toggle()
 end, { desc = "Test show summary" })
