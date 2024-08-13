@@ -16,6 +16,8 @@ return {
       "bash-language-server",
       "yaml-language-server",
       "helm-ls",
+      "groovy-language-server",
+      "npm-groovy-lint",
     },
   },
 }

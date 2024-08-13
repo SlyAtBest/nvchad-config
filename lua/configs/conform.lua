@@ -6,6 +6,8 @@ local options = {
     go = { "golines", "gofumpt", "goimports" },
     sh = { "shfmt" },
     yaml = { "yamlfix" },
+    Jenkinsfile = { "npm-groovy-lint" },
+    groovy = { "npm-groovy-lint" },
   },
 
   format_after_save = {

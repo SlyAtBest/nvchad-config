@@ -1,3 +1,5 @@
+vim.treesitter.language.register("groovy", { "Jenkinsfile" })
+
 return {
   "nvim-treesitter/nvim-treesitter",
   opts = {
@@ -13,6 +15,7 @@ return {
       "helm",
       "markdown",
       "markdown_inline",
+      "groovy",
     },
   },
 }
