@@ -20,6 +20,7 @@ return {
       "groovy-language-server",
       "npm-groovy-lint",
       "typescript-language-server",
+      "typos",
     },
   },
 }

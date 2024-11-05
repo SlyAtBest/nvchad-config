@@ -34,4 +34,4 @@ local options = {
   },
 }
 
-return options
+return require ("conform").setup(options)
