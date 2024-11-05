@@ -21,6 +21,8 @@ return {
       "npm-groovy-lint",
       "typescript-language-server",
       "typos",
+      "shfmt",
+      "yamlfix",
     },
   },
 }
