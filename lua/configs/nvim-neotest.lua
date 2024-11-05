@@ -6,7 +6,7 @@ end, { desc = "Test run test under cursor" })
 
 map("n", "<leader>rl", function()
   require("neotest").run.run_last()
-end, { desc = "Test run test under cursor" })
+end, { desc = "Test run the last test that was run" })
 
 map("n", "<leader>rtf", function()
   require("neotest").run.run(vim.fn.expand "%")

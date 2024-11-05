@@ -8,6 +8,7 @@ return {
       "css-lsp",
       "prettier",
       "gopls",
+      "golangci-lint",
       "golangci-lint-langserver",
       "gofumpt",
       "goimports",
@@ -18,6 +19,7 @@ return {
       "helm-ls",
       "groovy-language-server",
       "npm-groovy-lint",
+      "typescript-language-server",
     },
   },
 }
