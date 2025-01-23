@@ -9,6 +9,7 @@ local options = {
     Jenkinsfile = { "npm-groovy-lint" },
     groovy = { "npm-groovy-lint" },
     typescript = { "prettier" },
+    proto = { "buf" },
   },
 
   format_after_save = {

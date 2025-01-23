@@ -22,6 +22,7 @@ return {
       "typescript-language-server",
       "shfmt",
       "yamlfix",
+      "buf",
     },
   },
 }

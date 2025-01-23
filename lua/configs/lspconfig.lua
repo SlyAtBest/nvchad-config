@@ -2,7 +2,7 @@
 require("nvchad.configs.lspconfig").defaults()
 
 local lspconfig = require "lspconfig"
-local servers = { "html", "cssls", "gopls", "bashls", "groovyls", "ts_ls" }
+local servers = { "html", "cssls", "gopls", "bashls", "groovyls", "ts_ls", "buf_ls" }
 local path = vim.env.GOLANGCI_LINT_CONFIG_PATH
 local nvlsp = require "nvchad.configs.lspconfig"
 -- lsps with default config
