@@ -1,14 +1,14 @@
 local options = {
   formatters_by_ft = {
-    lua = { "stylua", "typos" },
-    css = { "prettier", "typos" },
-    html = { "prettier", "typos" },
-    go = { "golines", "gofumpt", "goimports", "typos" },
-    sh = { "shfmt", "typos" },
-    yaml = { "yamlfix", "typos" },
-    Jenkinsfile = { "npm-groovy-lint", "typos" },
-    groovy = { "npm-groovy-lint", "typos" },
-    typescript = { "prettier", "typos" },
+    lua = { "stylua" },
+    css = { "prettier" },
+    html = { "prettier" },
+    go = { "golines", "gofumpt", "goimports" },
+    sh = { "shfmt" },
+    yaml = { "yamlfix" },
+    Jenkinsfile = { "npm-groovy-lint" },
+    groovy = { "npm-groovy-lint" },
+    typescript = { "prettier" },
   },
 
   format_after_save = {
@@ -34,4 +34,4 @@ local options = {
   },
 }
 
-return require ("conform").setup(options)
+return require("conform").setup(options)
