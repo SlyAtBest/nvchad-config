@@ -25,6 +25,7 @@ lspconfig.helm_ls.setup {
 }
 
 lspconfig.golangci_lint_ls.setup {
+  root_dir = lspconfig.util.root_pattern(".git", "go.mod"),
   init_options = {
     command = {
       "golangci-lint",
